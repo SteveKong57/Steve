@@ -1,10 +1,11 @@
 
 
 /**
- * Write a description of class Adventure_Game here.
+ * Use the Java tools we've studied and practiced so 
+ * far to create an adventure game.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Steve Kong)
+ * @version (1.0)
  */
 import java.util.Random;
 import java.util.Scanner;
