@@ -4,8 +4,10 @@
  * Use the Java tools we've studied and practiced so 
  * far to create an adventure game.
  *
+ * Revise and expand your adventure game.
+ *
  * @author (Steve Kong)
- * @version (1.0)
+ * @version (1.1)
  */
 import java.util.Random;
 import java.util.Scanner;
@@ -103,10 +105,11 @@ public class Adventure_Game
             System.out.println("What would you like to do now?");
             System.out.println("1. Continue fighting");
             System.out.println("2. Exit Stronghold");
+            System.out.println("3. Rest");
             
             String input = in.nextLine();
             
-            while(!input.equals("1") && !input.equals("2")) {
+            while(!input.equals("1") && !input.equals("2") && !input.equals("3")) {
                 System.out.println("Invalid command!");
                 input = in.nextLine();
             }
@@ -117,6 +120,9 @@ public class Adventure_Game
             else if(input.equals("2")) {
                 System.out.println("You exit the Stronghold, successful from your adventure!");
                 break;
+            }
+            else if(input.equals("3")) {
+                System.out.println("You have rested for ten minutes.");
             }
         }
         
